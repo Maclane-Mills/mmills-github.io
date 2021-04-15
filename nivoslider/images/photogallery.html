@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title> slide Show</title>
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+
+</head>
+
+<body>
+    <div wrap="id">
+        <header> Head </header>
+
+
+        <nav>
+            Navigation
+
+        </nav>
+        <section>
+            <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                    <img src="images/duck1.jpg" data-thumb="images/duck1.jpg" alt="" />
+                    <a href="http://dev7studios.com"><img src="images/duck2.jpg" data-thumb="images/duck2" alt="" title="This is an example of a caption" /></a>
+                    <img src="images/duck3.jpg" data-thumb="images/duck3.jpg" alt="" data-transition="slideInLeft" />
+                    <img src="images/duck4.jpg" data-thumb="images/duck4.jpg" alt="" title="#htmlcaption" />
+                </div>
+                <div id="htmlcaption" class="nivo-html-caption">
+                    <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+                </div>
+            </div>
+
+
+        </section>
+
+        <footer>
+            footer
+        </footer>
+
+
+
+
+    </div>
+    <!--wrap close-->
+    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('#slider').nivoSlider();
+        });
+
+    </script>
+
+</body>
+
+</html>
